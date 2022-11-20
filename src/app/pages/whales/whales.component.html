@@ -1,0 +1,12 @@
+<div class="whales--gallery">
+    <div *ngFor="let whale of myWhales" >
+        <div class="whales--card">
+            <h4>{{whale.name}}</h4>
+            <div class="img--box">
+                <img src="{{whale?.image}}" alt="{{whale?.name}}"/>
+            </div>
+            <button routerLink="/whales/{{whale.id}}">ver más</button>
+        </div>
+        
+    </div> 
+</div>

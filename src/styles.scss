@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(0deg, rgba(170,180,58,1) 1%, rgba(227,174,38,1) 5%, rgba(246,191,31,1) 9%, rgba(255,227,190,1) 34%, rgba(255,245,218,1) 70%, rgba(216,223,234,1) 85%, rgba(203,222,252,1) 93%);
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
