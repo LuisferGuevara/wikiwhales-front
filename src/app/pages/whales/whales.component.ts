@@ -27,6 +27,8 @@ export class WhalesComponent implements OnInit {
       this.myWhales = [...whaleData]
     });
 
+
+
     
   }
 

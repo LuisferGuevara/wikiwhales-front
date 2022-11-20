@@ -10,7 +10,10 @@ export class NewWhaleComponent implements OnInit {
   newWhale : any = {
     name: "",
     image: "",
-    description: ""
+    description: "",
+    length:"",
+    weight: "",
+    scientificName: ""
   }
 
 

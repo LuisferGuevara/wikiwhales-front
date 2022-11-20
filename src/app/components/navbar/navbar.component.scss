@@ -9,12 +9,22 @@ nav {
     li {
       display: flex;
       width: 100%;
-      a{
-        display: flex;
-        width: 100%;
+      align-items: center;
+      justify-content: center;
+      a {
+        text-align: center;
         color: #414445;
         text-decoration: none;
-        font-size: .9em;
+        font-size: 0.9em;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        margin: 0 -0.25rem;
+        padding: 0 0.25rem;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+      a:hover {
+        box-shadow: inset 100px 0 0 0 #54b3d6;
+        color: white;
       }
     }
   }

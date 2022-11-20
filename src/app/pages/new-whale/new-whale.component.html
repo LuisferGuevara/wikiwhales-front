@@ -1,4 +1,32 @@
-<input type="text" [(ngModel)]="newWhale.name">
-<input type="text" [(ngModel)]="newWhale.image">
-<input type="text" [(ngModel)]="newWhale.descripion">
-<button (click)="send()">Send</button>
+<form>
+    <h2>Create and Add to the Gallery a New Whale</h2>
+    <div class="form--box">
+
+        <label>
+            Name *
+            <input type="text" [(ngModel)]="newWhale.name" [ngModelOptions]="{standalone: true}">
+        </label>
+        <label>
+            Image URL *
+            <input type="text" [(ngModel)]="newWhale.image" [ngModelOptions]="{standalone: true}">
+        </label>
+        <label>
+            Description *
+            <textarea type="text" [(ngModel)]="newWhale.description" [ngModelOptions]="{standalone: true}"></textarea>
+        </label>
+        <label>
+            Length
+            <input type="text" [(ngModel)]="newWhale.length" [ngModelOptions]="{standalone: true}">
+        </label>
+        <label>
+            Weight
+            <input type="text" [(ngModel)]="newWhale.weight" [ngModelOptions]="{standalone: true}">
+        </label>
+        <label>
+            Scientific Name
+            <input type="text" [(ngModel)]="newWhale.scientificName" [ngModelOptions]="{standalone: true}">
+        </label>
+    </div>
+    
+    <button (click)="send()">Send</button>
+</form>

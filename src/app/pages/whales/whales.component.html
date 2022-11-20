@@ -1,3 +1,14 @@
+
+<div *ngIf="!myWhales" class="loading"> 
+
+    <h2>LOOOOOOAAAADING WHALES . . .</h2>
+    <img
+      src="https://cdn.dribbble.com/users/124845/screenshots/855140/whale400x300.gif"
+      alt="gif loading"
+    />
+</div>
+
+
 <div class="whales--gallery">
     <div *ngFor="let whale of myWhales" >
         <div class="whales--card">

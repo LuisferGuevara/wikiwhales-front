@@ -24,6 +24,9 @@ export class WhalesService {
   public postWhale(newWhale:any){
     return this.http.post("https://wikiwhales-back.vercel.app/whales/create", newWhale)
   }
+  public deleteWhale(id:string): Observable<any>{
+    return this.http.delete(`https://wikiwhales-back.vercel.app/whales/delete/${id}`)
+  }
 
 
 }
