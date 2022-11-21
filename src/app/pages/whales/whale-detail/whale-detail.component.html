@@ -20,7 +20,11 @@
                 <p><span>Description:</span> {{myWhale?.description}}</p>
             </div>
         </div>
-        <button routerLink="/whales"> &#x2039; All Whales</button>
+        <div class="buttons--box">
+            <button routerLink="/whales"> &#x2039; All Whales</button>
+            <button (click)="deleteWhale()">Delete X </button>
+            <button routerLink="/updateWhale/{{myWhale?._id}}">Update &#8250;</button>
+        </div>
     </div>
 </section>
     

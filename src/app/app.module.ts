@@ -10,8 +10,9 @@ import { WhalesComponent } from './pages/whales/whales.component';
 import { WhaleDetailComponent } from './pages/whales/whale-detail/whale-detail.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormWhaleComponent } from './components/form-whale/form-whale.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewWhaleComponent } from './pages/new-whale/new-whale.component';
+import { UpdateWhaleComponent } from './pages/update-whale/update-whale.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,15 @@ import { NewWhaleComponent } from './pages/new-whale/new-whale.component';
     WhaleDetailComponent,
     NavbarComponent,
     FormWhaleComponent,
-    NewWhaleComponent
+    NewWhaleComponent,
+    UpdateWhaleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
