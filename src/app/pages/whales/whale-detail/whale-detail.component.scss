@@ -18,7 +18,10 @@
 
 section {
   height: 90vh;
+
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,15 +29,16 @@ section {
     background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
     background-size: cover;
     width: 80%;
-    max-width: 1000px;
-    height: 50%;
+    height: fit-content;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 1.4em;
+    padding-top: 3em;
     border-radius: 15px 50px;
+// margin-left: 10%;
     position: relative;
     h2 {
         position: absolute;
@@ -83,6 +87,16 @@ section {
           }
         }
       }
+      @media screen and (max-width:780px) {
+        flex-direction: column;
+        .img--box{
+          width: 100%;
+        }
+        .detail--meta{
+          width: 93%;
+        }
+        
+      }
     }
   }
   .buttons--box{
@@ -109,6 +123,10 @@ section {
         padding: 0.4em;
       }
 
+    }
+    @media screen and (max-width:780px) {
+      width: 100%;
+      
     }
 
   }

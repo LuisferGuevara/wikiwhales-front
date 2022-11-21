@@ -24,9 +24,11 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(auto, 600px);
   gap: 80px;
+  @media screen and (max-width:780px) {
+    margin-top: 6%;
+    
+  }
   .whales--card {
-    // background-color: #a8b9e9ca;
-    // background-image: url("../../../assets/wo.png");
     background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
     border: 2px solid #a8b9e9ca;
     background-size: cover;
@@ -76,7 +78,6 @@
       cursor: pointer;
 
       &:hover {
-        // background-color: #e0d6a0;
         background-image: url("https://media.istockphoto.com/id/1367756016/vector/yellow-watercolor-background-illustration.jpg?s=612x612&w=0&k=20&c=VAAg0xLzB5ky_HaKrLGLrJ2g3MQ8V4jjjYLmqnGN6Uk=");
         transition: all 0.3s ;
         padding: 0.4em;
